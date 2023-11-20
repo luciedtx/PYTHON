@@ -70,7 +70,8 @@
 # EX7
 import random
 nb=random.randint(0,100)
-operateur=["+","-","*"]
+list=["+","-","*"]
+ope=random.choice(list)
 quiz=int(input("participer au quiz?\n Oui : tapez 1\n Non : tapez 2\n"))
 if quiz==2:
     print("Au revoir !")
