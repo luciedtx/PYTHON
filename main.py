@@ -68,4 +68,25 @@
 #     print()
 
 # EX7
+import random
+nb=random.randint(0,100)
+operateur=["+","-","*"]
+quiz=int(input("participer au quiz?\n Oui : tapez 1\n Non : tapez 2\n"))
+if quiz==2:
+    print("Au revoir !")
+else :
+    for i in range(6) :
+        score=0
+        #afficher calcul
+        # calcul=nb,random.choice[operateur],nb
+        reponse=int(input("quel est le resultat de ce calcul ? "))
+        if reponse==calcul :
+            print("Bonne réponse")
+            score+=1
+        else :
+            print("Mauvaise réponse")
+            score-=1
+    print("Votre score est de",score,"/5,")
+
+
 
