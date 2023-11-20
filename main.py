@@ -86,7 +86,9 @@ else :
         else :
             print("Mauvaise réponse")
             score-=1
-    print("Votre score est de",score,"/5,")
+# ajouter un if pour les appreciations par rapport au score final
+print("Votre score est de",score,"/5.") 
+    
 
 
 
