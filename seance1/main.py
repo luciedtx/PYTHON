@@ -60,7 +60,7 @@
 # EX6 pyramide de symboles centrés
 # symbole=" $ "
 # taille=10
-# for i in range(0,11,2):
+# for i in range(0,taille,2):
 #     for j in range(-11, -i):
 #         print("", end=" ")
 #     for k in range(i+1):
