@@ -1,13 +1,9 @@
-def charlenght(char,lenght):
-    char=[]
+char=["lala","ok","oui"]
+
+def charlenght(char):
     lenght=[]
     for i in char :
-        
+        lenght.append(len(i))
+    return lenght
 
-
-
-list=["le","php","est","génial"]
-chaine= " ".join(list) #list en str
-
-
-(chaine_de_caractere1.split()) #str en list
+print(charlenght(char))

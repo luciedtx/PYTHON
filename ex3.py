@@ -3,5 +3,5 @@ def checkmail(mail):
         return "mail valide"
     else :
         return "mail invalide"
-mail="lalatest@gaming.ech"
+mail="lalatestming.ech"
 print(checkmail(mail))
