@@ -1,0 +1,22 @@
+[
+    {
+        "nom": "Toto",
+        "prenom": "Charlie",
+        "age": 30
+    },
+    {
+        "nom": "Severein",
+        "prenom": "Joshua",
+        "age": 25
+    },
+    {
+        "nom": "Laroche",
+        "prenom": "Alice",
+        "age": 19
+    },
+    {
+        "nom": "Laroche",
+        "prenom": "Alice",
+        "age": 19
+    }
+]

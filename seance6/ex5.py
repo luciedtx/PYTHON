@@ -1,22 +1,30 @@
-from math import*
-class Forme :
-    def __innit__(self, L, l, pi, R ) :
-        self.L= L
-        self.l= l
-        self.pi= pi
-        self.R= R
-    def aire(cls, L, l, pi, R):
-        cls.aire=L*l
-        
+import math 
+from abc import ABC, abstractclassmethod
 
-class Cercle(Forme) :
-    def __init__(self, L, l , pi , R):
-        Forme.__init__(self, L, l, pi, R)
+class Forme :
+    @abstractclassmethod
+    def aire(self):
+        pass
 
 class Rectangle(Forme):
-    def __init__(self, L, l, pi, R):
-        Forme.__init__(self, L, l, pi, R)
+    def __init__(self, largeur, longueur):
+        self.largeur= largeur
+        self.longueur= longueur
+    def aire(self) :
+        return self.longueur * self.largeur
 
-
-rect= Rectangle()
-rect.aire()
+class Cercle(Forme) :
+    def __init__(self, rayon):
+        self.rayon= rayon
+    def aire(self):
+        return math.pi* self.rayon**2
+    
+class Triangle(Forme):
+    def __init__(self, base, hauteur):
+        super().__init__()
+        self.base= base
+        self.hauteur= hauteur
+    def aire(self):
+        return self.base* self.hauteur/2
+    
+rect= Rectangle(5,8)
