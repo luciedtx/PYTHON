@@ -1,0 +1,22 @@
+[
+    {
+        "nom": "Poulet",
+        "prix": 20,
+        "quantite": 5
+    },
+    {
+        "nom": "Carottes",
+        "prix": 10,
+        "quantite": 15
+    },
+    {
+        "nom": "Glaces",
+        "prix": 5,
+        "quantite": 1
+    },
+    {
+        "nom": "Jus de pomme",
+        "prix": 1.5,
+        "quantite": 3
+    }
+]
