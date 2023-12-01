@@ -17,11 +17,11 @@ with open(chemin,"a") as f :
 
 def ecrire_fichier(chemin, contenu):
     # prendre un contenu en parametre et l'ajouter au fichier    
-    with open(chemin,"a") as f:
+    with open(chemin,"a", encoding="utf-8") as f: 
         f.write(contenu)
 
 lire_fichier(chemin)
-ecrire_fichier(chemin,"Un parametre pour ajouter des donnees")
+ecrire_fichier(chemin,"Un parametre pour ajouter des données")
 
 
 
