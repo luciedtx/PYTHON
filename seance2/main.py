@@ -1,6 +1,6 @@
 # Les exceptions
 var1= 10
-# var2= 0
+var2= 0
 try :
     print(var1/var2)
 except ZeroDivisionError :

@@ -69,27 +69,41 @@
 
 # EX7
 import random
-nb=random.randint(0,100)
-list=["+","-","*"]
-ope=random.choice(list)
+
 quiz=int(input("participer au quiz?\n Oui : tapez 1\n Non : tapez 2\n"))
 if quiz==2:
     print("Au revoir !")
 else :
+    score=0
     for i in range(6) :
-        score=0
-        #afficher calcul
-        # calcul=nb,random.choice[operateur],nb
-        reponse=int(input("quel est le resultat de ce calcul ? "))
-        if reponse==calcul :
+        nb1=random.randint(0,100)
+        nb2=random.randint(0,100)
+        list=["+","-","*"]
+        ope=random.choice(list)
+        calcul=nb1, ope, nb2
+        print(f"{calcul[0]} {calcul[1]} {calcul[2]}")
+        reponse = int(input("Quel est le résultat de ce calcul ? "))
+        
+        if ope == "+":
+            resultat_attendu = calcul[0] + calcul[2]
+        elif ope == "-":
+            resultat_attendu = calcul[0] - calcul[2]
+        elif ope == "*":
+            resultat_attendu = calcul[0] * calcul[2]
+        if reponse == resultat_attendu:
             print("Bonne réponse")
-            score+=1
-        else :
+            score += 1
+        else:
             print("Mauvaise réponse")
-            score-=1
-# ajouter un if pour les appreciations par rapport au score final
-print("Votre score est de",score,"/5.") 
-    
+
+    # Ajoutez un if pour les appréciations par rapport au score final
+    if score<=4 :
+        print("Votre score est de", score, "/6. C'est pas un tres bon score. Courage ")
+    elif score>=5 and score<8 :
+        print("Votre score est de", score, "/6. C'est un bon score. Continuez comme ça ")
+    else :
+        print("Votre score est de", score, "/6. C'est un tres bon score ! Bravo ")
+        
 
 
 
