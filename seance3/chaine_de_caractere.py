@@ -13,7 +13,9 @@ print(chaine_de_caractere2.replace("python","javascript"))
 print(chaine_de_caractere1.split()) #str en list
 
 list=["le","php","est","génial"]
+
 chaine= " ".join(list) #list en str
+
 print(chaine)
 print(chaine_de_caractere2.partition("c'est"))
 print(chaine_de_caractere1.index("e")) #afficher l'index
@@ -38,6 +40,7 @@ presentation("Jean")
 
 def presentation2(nom,age):
     return f"je m'appelle {nom} et j'ai {age}ans"
+
 print(presentation2("Lucie",18))
 
 def addition(*args):
